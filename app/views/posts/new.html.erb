@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+    <h2>Make a new post! </h2>
+    <h3>Post Form </h3>
+        <%= form_tag posts_path do %>
+            <label>Post title</label><br>
+            <%= text_field_tag :'post[title]' %><br>
+            <label>Post description</label><br>
+            <%= text_area_tag :'post[description]' %><br>
+            <%= submit_tag "Submit Post" %>
+        <% end %>
+    </body>
+</html>
+
+
+
+
+
+
+
